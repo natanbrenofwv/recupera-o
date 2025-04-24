@@ -6,6 +6,17 @@ class Personagem {
         this.vida = vida
         
     }
+    Usarmagia(){
+        console.log("magia")
+    }
+    
+    atacar(){
+        console.log("ataque")
+}
+    defender(){
+    console.log("defender")
+}
+
 }
 
 class mago extends Personagem{
@@ -16,6 +27,14 @@ class mago extends Personagem{
         console.log("usando magia")
     
     }
+    atacar(){
+        console.log('bola de fogo')
+
+    }
+
+    defender(){
+        console.log("escudo de magia")
+    }
     
 }
 
@@ -23,9 +42,15 @@ class guerreiro extends Personagem{
     constructor(mana, forca, vida){
         super (mana, vida, forca)
     }
+
     defender(){
         console.log ("defendendo")
     }
+
+    atacar(){
+        console.log("atacar com a espada")
+    }
+
 }
 
 class arqueiro extends Personagem{
@@ -35,5 +60,7 @@ class arqueiro extends Personagem{
     atacar(){
     console.log("atacando")
 }
-
+    Usarmagia(){
+    console.log("flecha de fogo")
+    }
 }
