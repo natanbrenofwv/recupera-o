@@ -7,3 +7,21 @@ class Personagem {
         
     }
 }
+
+class mago extends Personagem{
+    constructor(mana, vida, forca){
+        super(mana, vida, forca)
+    }
+}
+
+class guerreiro extends Personagem{
+    constructor(mana, forca, vida){
+        super (mana, vida, forca)
+    }
+}
+
+class arqueiro extends Personagem{
+    constructor(mana, forca, vida){
+        super(mana, forca, vida)
+    }
+}
